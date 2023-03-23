@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500;700&family=PT+Sans&family=Roboto+Mono:ital,wght@0,700;1,400&family=Rubik:wght@500&family=Sofia+Sans&family=Source+Sans+Pro:wght@600&display=swap');
+*{
+    margin : 0 ;
+    padding : 0;
+    font-family: 'Rubik', sans-serif;;
+}
+.header {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: 100%;
+}
+
+.rightnav {
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+}
+.load-more1 {
+
+    cursor: pointer;
+    margin-top: 12px;
+    margin-left : 35%;
+    margin-right: 35%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding : 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 100px;
+    min-height: 30px;
+    background-color: white;
+    /* border: 1px solid  black; */
+    color : black;
+    transform : scale(300px);
+}
+.load-more1:hover {
+    transition: transform 0.75s ease;
+    transform: scale(1.1);
+    background-color: black ;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.parent{
+    width: 100%;
+    height: 50px;
+}
+.container {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    text-shadow: 5px;
+    box-shadow:  10px 0 12px 0 rgba(0, 0, 0, 0.3);
+    background-color: lightcyan;
+}
+.cont-head {
+    margin-left: 40%;
+    display: flex;
+    font-size: 30px;
+    font-weight: 300;  
+}
+.main-logo {
+    padding: 11px;
+}
+.cont-down {
+    padding: 0;
+    margin: 0;  
+    font-size: 10px; 
+}
+.cont-input {
+    text-align: center;
+    background-color: white;
+    height: 64px;
+    box-shadow:  10px 0 12px 0 rgba(0, 0, 0, 0.3);
+    background-color: lightcyan;
+}
+.element1 {
+    margin-bottom: 30px;
+}
+.cont-input form {
+    width: 100%;
+    display: flex;
+}
+.cont-input input {
+    margin-top: 12px;
+    border-radius: 5px;
+    width: 400px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.cont-input button {
+    cursor: pointer;
+    margin-top: 12px;
+    margin-left : 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding : 10px;
+    width: 70px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid  black;
+    color : black;
+}
+.cont-input button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+::placeholder {
+    padding-left: 5px;
+}
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon {
+    padding-top: 10px;
+    padding: 5px;
+}
+.outer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.menuimage  {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+.menu {
+    height: 100%;
+}
+.element p{
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    font-family: 'PT Sans', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.element p:hover {
+    box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 7), 0 6px 30px 0 rgba(0, 0, 0, 7);
+}
+.content  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.top-nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: black;
+}
+.test {
+    margin: auto;
+    margin-top: 100px ;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.testdiv {
+    display: flex;
+    height: 300px;
+    margin-bottom: 80px;
+    margin: 20px auto 20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    max-width: 900px;
+}
+.news-divone {
+  width: 35%;
+}
+.news-divtwo  {
+   width: 65%;
+}
+.news-img {
+    height: 300px;
+    width:   300px;
+ }
+ .content-area1 {
+    font-size: 30px;
+ }
+ .content-area {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+    font-size: 15px;
+ }
+ .content-area-button {
+    background-color: black;
+ }
+ a{
+    text-decoration: none;
+    color: white;
+ }
+ .card-button {
+    cursor: pointer;
+    margin-top: 12px;
+    margin-left : 35%;
+    margin-right: 35%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding : 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 100px;
+    min-height: 30px;
+    background-color:  black;
+    border: 1px solid  black;
+    color : black;
+  }
+  
+  .card-button:hover {
+    background-color: light black;
+    color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 4), 0 2px 4px 0 rgba(0, 0, 0, 4);
+  }
+  .load-more {
+    cursor: pointer;
+    margin-top: 12px;
+    margin-left : 35%;
+    margin-right: 35%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding : 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 100px;
+    min-height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    color : black;
+    transform : scale(200px);
+  }
+  .load-more:hover {
+    transition: transform 0.75s ease;
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .Menu,.Menu-image {
+    box-shadow :  10px 0 12px 0 rgba(0, 0, 0, 0.3);
+  }
+  .Menu {
+     animation: mymove 1s ;
+  }
+  @keyframes mymove {
+      from {width : 0;}
+      to {width:100%}
+  }
+
+  .element-hr {
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+  .menuimage {
+    height: 25px;
+    width: 30px;
+    margin-bottom: 28px;
+    margin-left: 4px;
+    margin-top: 10px;   
+  }
+  @media (max-width : 1060px) {
+    .test {
+        margin-top: 70px;
+    }
+      
+    .news-divone {
+        width: 35%;
+      }
+      .news-divtwo  {
+         width: 65%;
+      }
+    .card-button {
+        cursor: pointer;
+        margin-top: 5px;
+        margin-left : 35%;
+        margin-right: 35%;
+        margin-right: 7px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        padding : 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        min-width: 70px;
+        min-height: 20px;
+        background-color:  black;
+        border: 1px solid  black;
+        color : black;
+      }
+      
+    .content-area1 {
+        font-size: 20px;
+     }
+    .content-area {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        margin: 10px;
+     }
+     .testdiv {
+        height: 200px;
+        margin-bottom: 30px;
+     }
+    .news-img{
+        width: 200px;
+        height: 200px;
+    }
+    .cont-input button {
+        cursor: pointer;
+        margin-top: 6px;
+        margin-left : 5px;
+        margin-right: 5px;
+        border-radius: 5px;
+        padding : 5px;
+        width: 70px;
+        height: 27px;
+        background-color: white;
+        border: 1px solid  #b31b1b;
+        color : #b31b1b;
+    }
+    .cont-input input {
+            margin-top: 6px;
+            border-radius: 4px;
+            width: 250px;
+            height: 27px;
+            border: 1px solid black;
+    }
+    .main-logo {
+        padding: 2px;
+    }
+    .cont-down {
+        padding: 0;
+        margin: 0;  
+        font-size: 7px; 
+    }
+    .cont-head {
+        margin-left: 5%;
+        display: flex;
+        font-size: 24px;
+        font-weight: 300;  
+    }
+    .parent {
+      height: 50px;
+    }
+    .cont-input {
+        text-align: center;
+        background-color: white;
+        height: 50px;
+        box-shadow:  10px 0 12px 0 rgba(0, 0, 0, 0.3);
+    }
+    .cont-input {
+        text-align: center;
+        background-color: white;
+        height: 50px;
+        box-shadow:  10px 0 12px 0 rgba(0, 0, 0, 0.3);
+    }
+    .Menu-image {
+        height: 49.5px;
+        box-shadow :  10px 0 12px 0 rgba(0, 0, 0, 0.3); 
+    }
+    .menuimage {
+        height: 25px;
+        width: 35px;
+        margin-left: 2px;
+        margin-top: 12px;   
+      }
+ }
+ @media (max-width : 760px) {
+    .test {
+        margin-top: 50px;
+    }
+    .news-divone {
+        width: 42%;
+      }
+      .news-divtwo  {
+         width: 58%;
+      }
+    .card-button {
+        cursor: pointer;
+        margin-top: 1px;
+        margin-left : 35%;
+        margin-right: 35%;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        padding : 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        min-width: 35px;
+        min-height: 10px;
+        background-color:  black;
+        border: 1px solid  black;
+        color : black;
+      }
+    .content-area1 {
+        font-size: 16px;
+     }
+     .content-area {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 3px;
+     }
+    .content-area {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 3px;
+     }
+     .testdiv {
+        height: 200px;
+        margin-bottom: 10px;
+     }
+    .news-img{
+        height: 200px;
+        width: 150px;
+    }
+    .cont-input button {
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 6px;
+        margin-left : 3px;
+        margin-right: 2px;
+        border-radius: 5px;
+        padding : 2px;
+        width: 50px;
+        height: 27px;
+        background-color: white;
+        border: 1px solid  #b31b1b;
+        color : #b31b1b;
+    }
+    .cont-input input {
+            margin-top: 6px;
+            border-radius: 4px;
+            width: 130px;
+            height: 27px;
+            border: 1px solid black;
+    }
+    .main-logo {
+        padding: 2px;
+    }
+    .cont-down {
+        padding: 0;
+        margin: 0;  
+        font-size: 5px; 
+    }
+    .cont-head {
+        margin-left: 5%;
+        display: flex;
+        font-size: 15px;
+        font-weight: 300;  
+    }
+    .parent {
+      height: 30px;
+    }
+    .cont-input {
+        text-align: center;
+        background-color: white;
+        height: 32px;
+        box-shadow:  10px 0 12px 0 rgba(0, 0, 0, 0.3);
+    }
+    .cont-input {
+        text-align: center;
+        background-color: white;
+        height: 43px;
+        box-shadow:  10px 0 12px 0 rgba(0, 0, 0, 0.3);
+    }
+    .Menu-image {
+        height: 42px;
+        box-shadow :  10px 0 12px 0 rgba(0, 0, 0, 0.3); 
+    }
+    .menuimage {
+        height: 20px;
+        width: 30px;
+        margin-left: 4px;
+        margin-top: 10px;   
+      }
+ }
+ @media (max-width : 400px) {
+    .Menu {
+        display: none;
+    }
+    .test {
+        margin-top: 50px;
+    }
+    .testdiv{
+        margin-right: 3px;
+    }
+    .news-divone {
+        width: 55%;
+      }
+      .news-divtwo  {
+         width: 45%;
+      }
+    .card-button {
+        cursor: pointer;
+        margin-top: 1px;
+        margin-left : 5%;
+        margin-right: 5%;
+        margin-bottom: 2px;
+        border-radius: 2px;
+        padding : 3px;
+        min-width: 35px;
+        min-height: 5px;
+        background-color:  black;
+        border: 1px solid  black;
+        color : black;
+      }
+    .content-area1 {
+        font-size: 13px;
+     }
+     .content-area {
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 3px;
+     }
+    .content-area1 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 3px;
+     }
+     .testdiv {
+        height: 200px;
+        margin-bottom: 10px;
+     }
+    .news-img{
+        height: 200px;
+        width: 150px;
+    }
+ }
