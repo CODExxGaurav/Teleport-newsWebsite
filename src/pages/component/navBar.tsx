@@ -18,14 +18,14 @@ const Nav = () => {
     </div>
   </div>
   <div>
-    <div className="cont-input">
+    {/* <div className="cont-input">
       <form>
         <input placeholder="Search here" name="search"></input>{" "}
         <button>
           <span className="span">Search</span>
         </button>
       </form>
-    </div>
+    </div> */}
     </div>
 </div>
   </>
