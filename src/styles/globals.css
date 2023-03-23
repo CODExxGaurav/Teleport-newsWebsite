@@ -34,7 +34,6 @@
     min-width: 100px;
     min-height: 30px;
     background-color: white;
-    /* border: 1px solid  black; */
     color : black;
     transform : scale(300px);
 }
@@ -192,7 +191,7 @@
  }
  .content-area-button {
     background-color: black;
- }
+ } 
  a{
     text-decoration: none;
     color: white;
