@@ -16,23 +16,23 @@ interface todo {
   description : string 
 }
 export const getStaticProps : GetStaticProps  = async () => {
-  const apiUrl1 = "https://newsapi.org/v2/everything?q=keyword&apiKey=d6aa63ff59614362a8fcc47dc8a2ca56";
+  const apiUrl1 = "https://newsapi.org/v2/everything?q=keyword&apiKey=8b2b50ff21ae40848c2aed3e877fe049";
   const   allNewsfirst = await axios.get(apiUrl1);
   const  allNews : todo[]  = allNewsfirst.data.articles ;
 
-  const apiUrl2 = "https://newsapi.org/v2/everything?q=defence&apiKey=d6aa63ff59614362a8fcc47dc8a2ca56";
+  const apiUrl2 = "https://newsapi.org/v2/everything?q=defence&apiKey=8b2b50ff21ae40848c2aed3e877fe049";
   const defensefirst  = await axios.get(apiUrl2);
   const defense  : todo[]  = defensefirst.data.articles ;
 
-  const apiUrl3 = "https://newsapi.org/v2/everything?q=entertainment&apiKey=d6aa63ff59614362a8fcc47dc8a2ca56";
+  const apiUrl3 = "https://newsapi.org/v2/everything?q=entertainment&apiKey=8b2b50ff21ae40848c2aed3e877fe049";
   const entertainmentfirst  = await axios.get(apiUrl3);
   const  entertainment  : todo[]  = entertainmentfirst.data.articles ;
 
-  const apiUrl4 = "https://newsapi.org/v2/everything?q=finance&apiKey=d6aa63ff59614362a8fcc47dc8a2ca56";
+  const apiUrl4 = "https://newsapi.org/v2/everything?q=finance&apiKey=8b2b50ff21ae40848c2aed3e877fe049";
   const  financefirst  = await axios.get(apiUrl4);
   const finance : todo[]  = financefirst.data.articles ;
 
-  const apiUrl5 = "https://newsapi.org/v2/everything?q=politics&apiKey=d6aa63ff59614362a8fcc47dc8a2ca56";
+  const apiUrl5 = "https://newsapi.org/v2/everything?q=politics&apiKey=8b2b50ff21ae40848c2aed3e877fe049";
   const politicsfirst  = await axios.get(apiUrl5);
   const politics  : todo[]  = politicsfirst.data.articles ;
   if(!allNews || !defense  || !entertainment || !finance ) {
