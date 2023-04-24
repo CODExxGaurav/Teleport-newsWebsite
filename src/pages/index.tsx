@@ -49,12 +49,16 @@ export const getStaticProps : GetStaticProps  = async () => {
 const Home = ({to} : {to: Array<todo[]>}) => {
   const logo1 = "Daily";
   const logo2 = "News";
+  const[array,changearray] = useState(to);
   const [down,changedown] = useState(8) ; 
   const [display,changedisplay] = useState("inline");
   const [hh,changeindex] = useState(0);
+  const [searchval,changesearchval] = useState('');
+  function fun1(value:any) {
+  }
   function changeit(value : any) {
       changeindex(value) ;
-      changedown(8);
+      changedown(8);     
   }
   function increaseLength() {
     if(down + 10 < to[hh].length) {
@@ -68,7 +72,7 @@ const Home = ({to} : {to: Array<todo[]>}) => {
   return (
       <div className="header">
           <div className="parent">
-         <Navbar></Navbar>
+         <Navbar fun1={fun1} value = {searchval} fun2={changesearchval}></Navbar>
 
       <div className="test">
       <div style={{display : "flex" , justifyContent : "space-evenly",width : "100%" }}>
@@ -92,7 +96,7 @@ const Home = ({to} : {to: Array<todo[]>}) => {
      <hr />
 
       {   
-              to[hh].slice(0,down).map((total: todo,index:any)=> {
+              array[hh].slice(0,down).map((total: todo,index:any)=> {
              return (
               <div className="testdiv" key= {index}> 
              <div className="news-divone">

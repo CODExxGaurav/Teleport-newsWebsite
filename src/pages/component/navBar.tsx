@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Menu from "./menu";
-const Nav = () => {
+const Nav = (props:any) => {
   const logo1 = "Daily";
   const logo2 = "News";
 
@@ -18,14 +18,20 @@ const Nav = () => {
     </div>
   </div>
   <div>
-    {/* <div className="cont-input">
+    <div className="cont-input">
       <form>
-        <input placeholder="Search here" name="search"></input>{" "}
-        <button>
+        <input placeholder="Search here" name="search" onChange={(e)=> {
+          e.preventDefault() ;
+          props.fun1(e.target.value);
+        }} value={props.value}></input>{" "}
+        <button onClick={(e)=> {
+             e.preventDefault() ;
+             props.fun1(props.value);
+        }}>
           <span className="span">Search</span>
         </button>
       </form>
-    </div> */}
+    </div>
     </div>
 </div>
   </>
